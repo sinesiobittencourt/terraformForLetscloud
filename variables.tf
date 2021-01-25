@@ -15,10 +15,16 @@ variable "env" {
 
 variable "ami" {
   description = "AWS AMI to be used "
-  default     = "ami-0c582118883b46f4f"
+  default     = "ami-064d8dbbcc5ded164"
 }
 
 variable "instance_type" {
   description = "AWS Instance type defines the hardware configuration of the machine"
   default     = "t2.micro"
+}
+
+variable "numberVPC" {
+  description = "Number VPC"
+  default     = "3"
+
 }
