@@ -5,7 +5,7 @@ variable "region" {
 
 variable "name" {
   description = "Name of the Application"
-  default     = "Letscloud.io-server1"
+  default     = ["App", "Db", "Web"]
 }
 
 variable "env" {
@@ -23,8 +23,8 @@ variable "instance_type" {
   default     = "t2.micro"
 }
 
-variable "numberVPC" {
-  description = "Number VPC"
-  default     = "3"
+variable "nunberOfInstance" {
+  description = "nunber Of Instance"
+  default     = "dev"
 
 }
